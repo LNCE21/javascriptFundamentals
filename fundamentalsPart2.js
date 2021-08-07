@@ -265,3 +265,29 @@ const lautaro = {
     friends: ["Benja", "Costan"]
 };
 */
+
+
+
+
+/*DOT VS BRACKET NOTATION
+const lautaro = {
+    firstName: ["Lautaro", "Nicolas"],
+    lastName: "Clerici",
+    age: 2022 - 1993,
+    job: "Developer",
+    friends: ["Benja", "Costan"]
+};
+//Dot Notation, way of getting a property from an object.The dot is an operator that get you to the "lautaro" object and retrieves the "lastName" property.
+console.log(lautaro.lastName);
+//Dot Notation to add new properties to the object
+lautaro.location = "Argentina";
+lautaro["github"] = "LNCE21";
+console.log(lautaro);
+
+//Bracket Notation, way of getting a property from an object, between the brackets we can put any expression that we'd like:
+console.log(lautaro["lastName"]);
+//Bracket Notation to add new properties to the object
+
+//Challenge
+console.log(`${lautaro.firstName} has ${lautaro.friends.length} friends, and his best friend is ${lautaro.friends[0]}`);
+*/
