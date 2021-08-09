@@ -243,4 +243,16 @@ if (friends.includes("Peter")) {
     console.log("You have a friend called Peter");
 }
 */
-//TEST
+
+
+
+
+/*INTRODUCTION TO OBJECTS*/
+//We have the following array, which is a data structure, and we know that there is no way of giving these elements a name (example: firstName, age, job etc). We can reference them by their order number.
+const lautaroArray =[
+    "Clerici",
+    2022 - 1993,
+    "Developer",
+    ["Nicolas", "Erhardt"]
+];
+//The soluti
