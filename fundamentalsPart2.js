@@ -247,12 +247,21 @@ if (friends.includes("Peter")) {
 
 
 
-/*INTRODUCTION TO OBJECTS*/
-//We have the following array, which is a data structure, and we know that there is no way of giving these elements a name (example: firstName, age, job etc). We can reference them by their order number.
+/*INTRODUCTION TO OBJECTS
+//We have the following array, in arrays, the order is the most important thing because is how we access data. An array is a data structure, and we know that there is no way of giving these elements a name (example: firstName, age, job etc). We can reference them by their order number.
 const lautaroArray =[
     "Clerici",
     2022 - 1993,
     "Developer",
     ["Nicolas", "Erhardt"]
 ];
-//The soluti
+//The solution is another data structure: Objects, in objects the order of the values not matter. We define key value pairs, and then we can give each of these values a name:
+//Object literal syntax is one way of writing objects: variable, curly braces, and next, each key has a value, if it has more than one, they go between brackets:        
+const lautaro = {
+    firstName: ["Lautaro", "Nicolas"],
+    lastName: "Clerici",
+    age: 2022 - 1993,
+    job: "Developer",
+    friends: ["Benja", "Costan"]
+};
+*/
