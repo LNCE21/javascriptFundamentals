@@ -243,3 +243,4 @@ if (friends.includes("Peter")) {
     console.log("You have a friend called Peter");
 }
 */
+//TEST
