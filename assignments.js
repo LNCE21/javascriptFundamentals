@@ -5,8 +5,8 @@ assign their values according to your own country (population in millions)*/
 /*
 let country = "Argentina";
 let continent = "America";
-*/
-let population = 44940000;
+
+let population = 44940000;*/
 
 /*2. Log their values to the console
 console.log(country, continent, population);
@@ -29,11 +29,11 @@ console.log(typeof language);
 
 //LECTURE: let, const and var
 
-/*1. Set the value of 'language' to the language spoken where you live (some countries have multiple languages, but just choose one)*/
-language = "castellano"; 
+/*1. Set the value of 'language' to the language spoken where you live (some countries have multiple languages, but just choose one)
+language = "castellano"; */
 
 
-/*2. Think about which variables should be const variables (which values will never change, and which might change?). Then, change these variables to const.*/
+/*2. Think about which variables should be const variables (which values will never change, and which might change?). Then, change these variables to const.
 const country = "Argentina";
 const continent = "America";
 const isIsland = false; //My real country is Argentina.
@@ -65,3 +65,5 @@ console.log(population > averagePopulation);
 /*5. Based on the variables you created, create a new variable 'description' which contains a string with this format: 'Portugal is in Europe, and its 11 million people speak portuguese'
 let description = country + " is in " + continent + ", " + "and its " + population + " million people speak " + language + ".";
 console.log(description);*/
+
+

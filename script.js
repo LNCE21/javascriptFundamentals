@@ -1,13 +1,13 @@
-/*
-Variables
+/*Variables
+
 let js = "amazing";
 console.log(40 + 8 + 23 - 10);
 let firstName = "Jonas";
 console.log(firstName);
 */
 
-/* 
-Operators
+/* Operators
+
 
 // Math operators
 let now = 2021;
@@ -36,5 +36,15 @@ console.log(ageJonas > ageSarah);
 console.log(ageSarah >= 18);
 */
 
-/**/
+/*Operator Precedence
+console.log(now- 1991 > now - 2018);
+//both parts are resolved before the comparison operator of the middle, because it has more precedence.
 
+//The result is 10 because is a Left to right exectution
+//console.log(25 - 10 - 5);
+
+//Assignments are a right to left exectution
+let x, y; //Here I am declaring 2 empty variables
+x = y = 25 - 10- 5; // Subtraction operator has more precedence, so it's executed from left to right. And after that, assignments are executed from right to left, that's why y is assigned first.
+console.log(x, y); //x and y are both 10
+*/
