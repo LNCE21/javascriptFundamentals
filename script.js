@@ -49,7 +49,7 @@ x = y = 25 - 10- 5; // Subtraction operator has more precedence, so it's execute
 console.log(x, y); //x and y are both 10
 */
 
-/*Strings and Templates literals*/  
+/*Strings and Templates literals 
 
 //Creating variables to concatenate into one big string
 const firstName = "Jonas";
@@ -73,4 +73,29 @@ lines");
 //Using template literal's backticks for multiline strings
 console.log(`String
 multiple 
-lines`)
+lines`)*/ 
+
+/*Taking decisions: if /else Statements
+
+//Write a program which checks if a person is allowed to take drivers license and how many years are left.
+const age = 15;
+if(age >= 18) {
+    console.log("Sarah can start driving license🎓");
+}   
+    else {
+    const yearsLeft = 18 - age;
+    console.log(`Sarah is too young, wait ${yearsLeft} years.`)
+}   
+
+
+//Let's create a variable conditionally so we don't always use console.log
+const birthYear = 1991;
+let century;
+if(birthYear <= 2000) {
+    century = 20;
+}   else {
+        century = 21;
+    }
+
+console.log(century);
+*/
