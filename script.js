@@ -48,3 +48,29 @@ let x, y; //Here I am declaring 2 empty variables
 x = y = 25 - 10- 5; // Subtraction operator has more precedence, so it's executed from left to right. And after that, assignments are executed from right to left, that's why y is assigned first.
 console.log(x, y); //x and y are both 10
 */
+
+/*Strings and Templates literals*/  
+
+//Creating variables to concatenate into one big string
+const firstName = "Jonas";
+const job = "teacher";
+const birthYear = 1991;
+const year = 2037;
+//Now concatenate into a string
+
+const jonas = "I'm " + firstName + ", a " + (year - birthYear) + " years old " + job + "!" ; 
+console.log(jonas);
+
+//The same as before but this time with template literals instead of strings
+const jonasNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}!`;
+console.log(jonasNew);
+
+//Using \n\ for multiline strings
+console.log("String with \n\
+multiple \n\
+lines");
+
+//Using template literal's backticks for multiline strings
+console.log(`String
+multiple 
+lines`)

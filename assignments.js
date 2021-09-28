@@ -36,7 +36,7 @@ language = "castellano"; */
 /*2. Think about which variables should be const variables (which values will never change, and which might change?). Then, change these variables to const.
 const country = "Argentina";
 const continent = "America";
-const isIsland = false; //My real country is Argentina.
+const isIsland = false; //My real country is Argentina.*/
 /*3. Try to change one of the changed variables now, and observe what happens*/
 
 
@@ -66,4 +66,9 @@ console.log(population > averagePopulation);
 let description = country + " is in " + continent + ", " + "and its " + population + " million people speak " + language + ".";
 console.log(description);*/
 
+//LECTURE: Strings and Template Literals
+/*1. Recreate the 'description' variable from the last assignment, this time
+using the template literal syntax
 
+const templateLiteralsDescription = `${country} is in ${continent}, and its ${population} million people speak ${language}.`;
+console.log(templateLiteralsDescription);*/

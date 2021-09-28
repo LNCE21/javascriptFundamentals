@@ -50,3 +50,4 @@ let johnBmi = johnWeight / (johnHeight ** 2);
 let markHigherBMI = markBmi > johnBmi;
 console.log(markHigherBMI);
 */
+
