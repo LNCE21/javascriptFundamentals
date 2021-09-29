@@ -1,3 +1,5 @@
+//Note taking from the course
+
 /*VARIABLES
 
 let js = "amazing";
@@ -151,3 +153,28 @@ console.log(m);//Result 95 string
 */
 
 
+
+/*TRUTHY AND FALSY VALUES 
+//Here we write some examples of them
+console.log(Boolean(0));//Falsy
+console.log(Boolean(undefined));//Falsy
+console.log(Boolean("Jonas")); //String, Truthy
+console.log(Boolean({}));//Empty object, true
+console.log(Boolean(""));//Empty string Falsy
+
+//Example 1: when we have a logical context (if else), JavaScript will apply Typed Coercion and will convert the value so that can execute the code. But, in this case 0 can't be transformed into a boolean, so it will be "falsy" or in other words "false"
+const money = 0;
+if (money) {
+    console.log("Don't spend it all!")
+}   else {
+    console.log("You should get a job!");
+}
+
+//Example 2: to check if a variable is defined or not.
+let height; //Undefined so, will be a falsy value when converted to boolean
+if (height) {
+    console.log("Yay! Height is defined");
+}   else {
+    console.log("Height is Undefined");
+}
+*/

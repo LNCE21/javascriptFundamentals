@@ -1,3 +1,5 @@
+//Assignments of every lecture
+
 //LECTURE: Values and Variables
 
 /*1. Declare variables called 'country', 'continent' and 'population' and
@@ -119,3 +121,4 @@ console.log(typeof c);
 console.log(typeof d);
 console.log(typeof e);
 */
+

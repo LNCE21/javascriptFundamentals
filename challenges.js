@@ -1,3 +1,5 @@
+//Challenges of every section
+
 /*
 Instructions
 The Complete JavaScript Course contains over 25 coding challenges for you to
