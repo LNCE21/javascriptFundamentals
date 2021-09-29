@@ -94,3 +94,28 @@ if (population > averagePopulation){
     console.log(`Argentina's population is ${averagePopulation - population} million below average.`)
 }
 */
+
+//LECTURE: Type Conversion and Coercion
+/*1. Predict the result of these 5 operations without executing them:
+a = '9' - '5'; //4 number
+b = '19' - '13' + '17';//19 - 13 = 6 + "17" = 617 string
+c = '19' - '13' + 17; //19 - 13 = 6 + 17 =  23 number
+d = '123' < 57; //False boolean
+e = 5 + 6 + '4' + 9 - 4 - 2; //1143 number
+*/
+
+/*2. Execute the operations to check if you were right
+console.log('9' - '5');
+console.log('19' - '13' + '17');
+console.log('19' - '13' + 17);
+console.log('123' < 57);
+console.log(5 + 6 + '4' + 9 - 4 - 2);
+*/
+
+/*3. What type of value have
+console.log(typeof a);
+console.log(typeof b);
+console.log(typeof c);
+console.log(typeof d);
+console.log(typeof e);
+*/

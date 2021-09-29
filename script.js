@@ -1,4 +1,4 @@
-/*Variables
+/*VARIABLES
 
 let js = "amazing";
 console.log(40 + 8 + 23 - 10);
@@ -6,8 +6,9 @@ let firstName = "Jonas";
 console.log(firstName);
 */
 
-/* Operators
 
+
+/*OPERATORS
 
 // Math operators
 let now = 2021;
@@ -36,7 +37,9 @@ console.log(ageJonas > ageSarah);
 console.log(ageSarah >= 18);
 */
 
-/*Operator Precedence
+
+
+/*OPERATOR PRECEDENCE
 console.log(now- 1991 > now - 2018);
 //both parts are resolved before the comparison operator of the middle, because it has more precedence.
 
@@ -49,7 +52,9 @@ x = y = 25 - 10- 5; // Subtraction operator has more precedence, so it's execute
 console.log(x, y); //x and y are both 10
 */
 
-/*Strings and Templates literals 
+
+
+/*STRINGS AND TEMPLATE LITERALS
 
 //Creating variables to concatenate into one big string
 const firstName = "Jonas";
@@ -75,7 +80,9 @@ console.log(`String
 multiple 
 lines`)*/ 
 
-/*Taking decisions: if /else Statements
+
+
+/*IF ELSE STATEMENTS AND TEMPLATE LITERALS
 
 //Write a program which checks if a person is allowed to take drivers license and how many years are left.
 const age = 15;
@@ -86,7 +93,6 @@ if(age >= 18) {
     const yearsLeft = 18 - age;
     console.log(`Sarah is too young, wait ${yearsLeft} years.`)
 }   
-
 
 //Let's create a variable conditionally so we don't always use console.log
 const birthYear = 1991;
@@ -99,3 +105,49 @@ if(birthYear <= 2000) {
 
 console.log(century);
 */
+
+
+/*TYPE CONVERSION & TYPE COERCION
+
+/*Type conversion
+Example -Conversion String to Number- the wrong way. 
+Imagine we have an input string, it won't sum 18 to 1991, it will concatenate a number at the end of the string:*/
+/*
+const inputYear = "1991";
+console.log(inputYear + 18); //Result on console: 199118
+*/
+
+//Example -Conversion String to Number- with Number function. To fix this error from above and be able to sum 18 to 1991 we need to convert this string into a number with the Number function
+/*
+const inputYear = "1991"; //This keeps being a string
+console.log(inputYear + 18); 
+console.log(Number(inputYear) + 18); //This gives us a converted version
+*/
+
+//Example -Conversion Number to String- with String function.
+/*
+console.log(String(1991) + inputYear);//Conversion of 1991 to string
+*/
+
+//NaN error: Not a Number is the result that appears on the console whenever an operation that involves numbers fails to produce a new number. Not a Number means "invalid number"
+/*
+console.log(Number("Jonas")); //Jonas can't be converted to a number
+*/
+
+/*Type coercion
+console.log("I'am " + 23 + " years old");//Plus operator converts numbers to strings
+console.log("23" - "10" - 3); //Minus operator converts strings to numbers
+console.log("23" * "2");//Multiplier and divider converts strings to numbers
+console.log("23" > "18"); //Logical converts strings to numbers
+
+//Exercise 1:
+let n = "1" + 1; //Type Coercion converts 1 to string so = 11(string)
+n = n - 1; //Type Coercion converts 11string to number so = 10(number)
+console.log(n); //Result, 10 number
+//Exercise 2:
+let m = 2 + 3 + 4; //Sums every number = 9
+m = m + "5"; //Type Coercion converts 9 to string and concatenates 5 = 95
+console.log(m);//Result 95 string
+*/
+
+
