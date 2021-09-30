@@ -178,3 +178,51 @@ if (height) {
     console.log("Height is Undefined");
 }
 */
+
+
+
+/*EQUALITY OPERATORS: == AND ===
+//Strict equality operator, it has to be exactly the same to be true. It is strict because doesn't use type coercion. 
+const age = 18;
+if (age === 18) {
+    console.log("You just become 18!");
+}
+*/
+
+/*Loose equality operator. Triggers Type Coercion
+const age = "18"; //Value Data type: Number
+if (age == 18) { //It's not exacly the same, it's a string
+    console.log("You just become 18!"); //But the result it's true because of the operator.
+}
+
+
+//prompt function to get a value from a webpage and a variable to store the value
+const favourite = prompt("What's your favorite number?");
+console.log(favourite); //Stores the number but as a string
+
+//Example of using Loose equality operator so that we can use the string to a number
+if (favourite == 23) {
+    console.log("Cool! 23 is an amazing number!");
+}
+
+//Example of using Number function to avoid using loose equality operator.
+const favourite = Number(prompt("What's your favorite number?"));
+if (favourite === 23) {
+    console.log("Cool! 23 is an amazing number!");
+}
+
+//Example of using more conditions -else if-
+const favourite = Number(prompt("What's your favorite number?"));
+if (favourite === 23) {
+    console.log("Cool! 23 is an amazing number!");
+} else if(favourite === 7) {
+    console.log("7 is also an amazing number!");
+}   else {
+    console.log("Number is not 23 or 7");
+}
+
+//Different operator != (loose version) !== (strict version)
+if(favourite !== 23) {
+    console.log("Why not 23?");
+}
+*/
