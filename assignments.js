@@ -158,8 +158,6 @@ if(numNeighbours == 1){
 
 /*5. Test the code with different values of 'numNeighbours', including 1 and 0.*/ 
 
-
-
 /*6. Change == to ===, and test the code again, with the same values of 'numNeighbours'. Notice what happens when there is exactly 1 border! Why is this happening?
 const numNeighbours = prompt("How many neighbour countries does your country have?");
 if(numNeighbours === 1){
@@ -169,8 +167,9 @@ if(numNeighbours === 1){
 }   else {
     console.log("No borders");
 }
-//It happens because the input is a string and it doesn't match the condition of the if. If we want them to be exacly the same, we should convert the input to a number data type with the Number function.
 */
+//It happens because the input is a string and it doesn't match the condition of the if. If we want them to be exacly the same, we should convert the input to a number data type with the Number function.
+
 
 /*7. Finally, convert 'numNeighbours' to a number, and watch what happens now when you input 1
 const numNeighbours = Number(prompt("How many neighbour countries does your country have?"));
