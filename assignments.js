@@ -185,3 +185,45 @@ if(numNeighbours === 1){
 /*8. Reflect on why we should use the === operator and type conversion in this situation.
 We should use the strict equality operator because we are less susceptible to bugs.
 On the other hand, we could use the loos equality operator if we want to skip the step of converting the string to number*/
+
+
+//LECTURE: Logical Operators
+/*1. Comment out the previous code so the prompt doesn't get in the way*/
+
+/*2. Let's say Sarah is looking for a new country to live in. She wants to live in a country that speaks english, has less than 50 million people and is not an island.
+
+const country = "Canada";
+const language = "English";
+const population = 40000000;
+const territory = "Land";
+
+if(language === "English" && population < 50000000 && territory !== "Island"){
+    console.log(`Sarah can live in ${country}!`);
+}   else {
+    console.log(`${country} doesn't met his requirements. She has to keep searching...`);
+}
+*/
+
+/*
+3. Write an if statement to help Sarah figure out if your country is right for her. You will need to write a condition that accounts for all of Sarah's criteria. Take your time with this, and check part of the solution if necessary.
+
+const country = "Argentina";
+const language = "Spanish";
+const population = 40000000;
+const territory = "Continent";
+
+if(language === "English" && population < 50000000 && territory !== "Island"){
+    console.log(`Sarah can live in ${country}!`);
+}   else {
+    console.log(`${country} doesn't met his requirements. She has to keep searching...`);
+}
+*/
+
+/*4. If yours is the right country, log a string like this: 'You should live in Portugal :)'. If not, log 'Portugal does not meet your criteria :('
+
+I've already did something similar
+*/
+
+/* 5. Probably your country does not meet all the criteria. So go back and temporarily change some variables in order to make the condition true (unless you live in Canada :D)
+Done
+*/
