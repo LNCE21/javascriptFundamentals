@@ -14,6 +14,8 @@ Some of the later challenges are quite difficult on purpose (after all, they are
 
 /*JavaScript Fundamentals – Part 1
 
+
+
 Coding Challenge #1
 Mark and John are trying to compare their BMI (Body Mass Index), which is
 calculated using the formula: BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in meter).
@@ -52,6 +54,8 @@ let markHigherBMI = markBmi > johnBmi;
 console.log(markHigherBMI);
 */
 
+
+
 /*
 Coding Challenge #2
 Use the BMI example from Challenge #1, and the code you already wrote, and improve it. Your tasks:
@@ -86,5 +90,65 @@ if (markBmi > johnBmi) {
 }
 */
 
+
+
+/*Coding Challenge #3
+//There are two gymnastics teams, Dolphins and Koalas. They compete against each other 3 times. The winner with the highest average score wins a trophy! Your tasks:
+
+//1. Calculate the average score for each team, using the test data below
+const scoreDolphinsData1 = (96 + 108 + 89) / 3;//97.66
+const scoreKoalasData1 = (88 +91 +110) / 3;//96.33
+
+const scoreDolphinsData2 = (97 + 112 + 101) / 3;//103.33
+const scoreKoalasData2 = (109 + 95 + 123) / 3;//109
+
+const scoreDolphinsData3 = (97 + 112 + 101) / 3;//103.33
+const scoreKoalasData3 = (109 + 95 + 106) / 3;//103.33
+*/
+
+/*2. Compare the team's average scores to determine the winner of the competition, and print it to the console. Don't forget that there can be a draw, so test for that as well (draw means they have the same average score)
+
+if(scoreDolphinsData1 > scoreKoalasData1) {
+    console.log("The dolphins are the winners of the competition!");
+} else if(scoreDolphinsData1 < scoreKoalasData1){
+    console.log("The Koalas are the winners of the competition!");
+} else{
+    console.log("It's a draw!");
+}
+*/
+
+/* 3. Bonus 1: Include a requirement for a minimum score of 100. With this rule, a team only wins if it has a higher score than the other team, and the same time a score of at least 100 points. Hint: Use a logical operator to test for minimum score, as well as multiple else-if blocks
+
+const minimumScore = 100;
+
+if(scoreDolphinsData2 > scoreKoalasData2 && scoreDolphinsData2 >= minimumScore) {
+    console.log("The dolphins are the winners of the competition!");
+} else if(scoreDolphinsData2 < scoreKoalasData2 && scoreKoalasData2 >= minimumScore){
+    console.log("The Koalas are the winners of the competition!");
+} else{
+    console.log("It's a draw!");
+}
+*/
+
+/*4. Bonus 2: Minimum score also applies to a draw! So a draw only happens when
+both teams have the same score and both have a score greater or equal 100
+points. Otherwise, no team wins the trophy
+
+const scoreDolphinsData2 = (97 + 112 + 101) / 3;//103.33
+const scoreKoalasData2 = (109 + 95 + 123) / 3;//109
+const minimumScore = 100;
+if(scoreDolphinsData2 > scoreKoalasData2 && scoreDolphinsData2 >= minimumScore) {
+    console.log("The dolphins are the winners of the competition!");
+} else if(scoreDolphinsData2 < scoreKoalasData2 && scoreKoalasData2 >= minimumScore){
+    console.log("The Koalas are the winners of the competition!");
+} else if(scoreDolphinsData2 >= minimumScore && scoreKoalasData2 >= minimumScore){
+    console.log("It's a draw!");
+}
+*/
+/*Test data:
+Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
+Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
+Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
+GOOD LUCK*/
 
 
