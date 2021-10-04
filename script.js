@@ -226,3 +226,31 @@ if(favourite !== 23) {
     console.log("Why not 23?");
 }
 */
+
+
+/*LOGICAL OPERATORS
+const hasDriverLicense = true;//Variable A
+const hasGoodVision = false;//Variable B
+
+//and and or operatores
+console.log(hasDriverLicense && hasGoodVision); //AND operator
+console.log(hasDriverLicense || hasGoodVision); //OR operator
+console.log(!hasDriverLicense); //NOT operator
+
+//Taking the previous variables to make a decision. Sarah should drive?
+
+if(hasDriverLicense && hasGoodVision) {
+    console.log("Sarah is able to drive!");
+}   else{
+    console.log("Someone else should drive...");
+}
+
+//Let's answer the same question but taking in consideration if it's tired
+const isTired = true; //Variable C
+//Sarah is able to drive if she has a license, good vision and if she is not tired.
+if(hasDriverLicense && hasGoodVision && !isTired) {
+    console.log("Sarah is able to drive!");
+}   else{
+    console.log("Someone else should drive...");
+}
+*/
