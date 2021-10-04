@@ -90,6 +90,7 @@ if (markBmi > johnBmi) {
 }
 */
 
+<<<<<<< HEAD
 
 
 /*Coding Challenge #3
@@ -152,3 +153,13 @@ Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 GOOD LUCK*/
 
 
+=======
+//TRY THIS!
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
+function isHigher(markBmi, johnBmi) {
+  return markBmi > johnBmi
+    ? `Mark's BMI (${markBmi}) is higher than John's (${johnBmi})!`
+    : `John's BMI (${johnBmi}) is higher than Mark's (${markBmi})!`;
+}
+console.log(isHigher(2, 1));
+>>>>>>> b7675643a126b213f37b606e25aa00e1d25fdd86
