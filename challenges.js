@@ -86,5 +86,11 @@ if (markBmi > johnBmi) {
 }
 */
 
-
-
+//TRY THIS!
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
+function isHigher(markBmi, johnBmi) {
+  return markBmi > johnBmi
+    ? `Mark's BMI (${markBmi}) is higher than John's (${johnBmi})!`
+    : `John's BMI (${johnBmi}) is higher than Mark's (${markBmi})!`;
+}
+console.log(isHigher(2, 1));
