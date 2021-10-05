@@ -260,3 +260,17 @@ switch (language) {
     console.log("Great language too :D");
 }
 */
+
+
+
+/*LECTURE: The Conditional (Ternary) Operator
+1. If your country's population is greater than 33 million, use the ternary operator to log a string like this to the console: 'Portugal's population is above average'.
+Otherwise, simply log 'Portugal's population is below average'. Notice how only one word changes between these two sentences!
+
+argentinaPopulation = 44000000;
+averagePopulation = 33000000;
+argentinaPopulation > averagePopulation ? console.log(`Argentina's population is above average. Because, the average is ${averagePopulation} and Argentina has ${argentinaPopulation} million people`) : console.log(`Argentina's population is under the average, Argentina is missing ${averagePopulation - argentinaPopulation} million people to be above.`);
+*/
+/*2. After checking the result, change the population temporarily to 13 and then to 130. See the different results, and set the population back to original
+DONE
+*/

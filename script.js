@@ -285,3 +285,52 @@ switch(day) {
         console.log("Not a valid day!");
 }
 */
+
+
+
+/*STATEMENTS AND EXPRESSIONS
+Expression is a piece of code that produces a value. Example: 3 + 4 Example 2: 1991 Example 3: true && false
+Statement is  a bigger piece of code that doesn’t produce a value on itself. We write our whole programs as a sequence of actions and these actions are statements.
+
+
+//Example: This If/Else Statement doesn't produce a value. It simply declares that variable. But the string itself "23 is bigger" it is an expression
+if (23>10) {
+    const str = "23 is bigger";
+}
+
+//Example: Where to expect an expression? Inside a template literal.
+const me = "Lautaro";
+console.log(`I'm ${2021 - 1993} years old. My name is ${me}`);
+*/
+
+
+
+
+/*THE CONDITIONAL OPERATOR (TERNARY)
+condition ? exprIfTrue : exprIfFalse
+It's called the ternary operator because it has 3 parts: if, code to execute and the else part. The conditional operator allows us to write something similar to an if/else statement but in one line
+const age = 28;
+//If block, next the question mark, next the code to be executed in case the if condition matches, afterwards, a colon and mandatory else block
+age >= 18 ? console.log("You can drink beer!") :
+console.log("You can't drink beer. You may drink water!");
+
+
+//Example of using conditional operator to store a value. So "drink" is defined conditionally, based on the condition block.
+const age = 23;
+const drink = age >= 18 ? "You can drink beer" : "You can drink water";
+console.log(drink);
+
+//Example of the same conditional operator but write as an if else statement: We can arrive to the conclusion that in this case the conditional operator gets the job done more efficiently
+
+let drink2;
+if (age >= 18) {
+    drink2 = "You can drink beer";
+}   else {
+    drink2 = "You can drink water";
+}
+
+console.log(drink2);
+
+//Another use case scenario: Inserting a conditional operator into a template literal, it can be done because is an expression (unlike the if/else statement, this one we cannot insert into a template)
+console.log(`Do you want to know? Well ${age >= 18 ? "You can drink beer" : "You can drink water"}`);
+*/
