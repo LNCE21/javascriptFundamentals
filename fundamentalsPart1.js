@@ -1,7 +1,11 @@
-//Note taking from the course
+/*NOTE TAKING AND EXERCISES
+-----------------------------------------------------------
+TOPICS OF PART ONE: Values and variables, operators, Data types, -let const and var-, Basic Operators, Operator precedence, Strings and Template Literals, if-else statements, Type conversion and Type coercion, truthy and falsy values, Equality operators (strict/loose), Boolean logic, Logical Operators, The Switch statement, Statements and Expressions, The conditional (ternary) Operator, Javascript Releases: ES5, ES56, ESNext.
+*/
+
+//PART ONE
 
 /*VARIABLES
-
 let js = "amazing";
 console.log(40 + 8 + 23 - 10);
 let firstName = "Jonas";

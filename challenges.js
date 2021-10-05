@@ -1,3 +1,4 @@
+"use strict";
 //Challenges of every section
 
 /*

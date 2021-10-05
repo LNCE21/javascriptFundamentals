@@ -1,3 +1,4 @@
+"use strict";
 //Assignments of every lecture
 
 //LECTURE: Values and Variables
