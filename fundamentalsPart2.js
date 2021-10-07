@@ -72,7 +72,7 @@ console.log(age2);
 
 
 /*ARROW FUNCTIONS  
-It is a special form of function expression that is shorter, and therefore faster to write. It's called arrow function because its part of the syntax:*/
+It is a special form of function expression that is shorter, and therefore faster to write. It's called arrow function because its part of the syntax:
 
 //Example of arrow function to calculate the age:
 const calcAge3 = birthYear => 2022 - birthYear;
@@ -80,3 +80,24 @@ const calcAge3 = birthYear => 2022 - birthYear;
 const age3 = calcAge3(1993);
 //Log in the console.
 console.log(age3);
+
+
+//Example how many years left until retirement, we need more than one line of code, and for that matter we are going to need return:
+const yearsUntilRetirement = birthYear => {
+    const age = 2022 - birthYear;
+    const retirement = 65 - age;
+    return retirement;
+}
+//Calling the function
+console.log(yearsUntilRetirement(1993));
+
+
+//Example arrow function with more than one parameter:
+const yearsUntilRetirement = (birthYear, firstName) => {
+    const age = 2022 - birthYear;
+    const retirement = 65 - age;
+    return `${firstName} retires in ${retirement} years.`;
+}
+//Calling the function by passing arguments
+console.log(yearsUntilRetirement(1993, "Lautaro"));
+*/
