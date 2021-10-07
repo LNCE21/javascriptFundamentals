@@ -26,7 +26,7 @@ function logger() {
 
 //Invoking/running/calling the function, we simply write the name with ();
 logger();
-*/
+
 
 //Example of function with parameters, return
 function fruitProcessor(apples, oranges) {
@@ -46,4 +46,25 @@ console.log(appleOrangeJuice);
 //Another example of a function is the Number function, is a built-in function, we pass a string as s parameter and returns a number:
 Number("23");
 
-//Another example of a function is the console.log function, it is another built-in function were we pass
+//Another example of a function is the console.log function, it is another built-in function were we pass*/
+
+
+
+
+/*FUNCTION DECLARATIONS VS. EXPRESSIONS
+//In JavaScript, functions are like values, meaning that they can be stored in variables. 
+
+//Example Function Declaration to calculate age on a given birth year. We can actually call function declarations before they are defined in the code, even if it’s not a good idea.
+function calcAge1(birthYear) {
+    return 2022 - birthYear;
+}
+const age1 = calcAge1(1993);
+console.log(age1);
+
+//Example Function Expression: As all the expressions, it produces a value. So, we write the function without a name but instead, we store the value on a variable. The main difference is that we cannot call the function before its define, it forces you to keep a nice structure (define all the functions first at the top of the code, and only then call them):
+const calcAge2 = function (birthYear) {
+    return 2022 -birthYear;
+}
+const age2 = calcAge2(1993);
+console.log(age2);
+*/
