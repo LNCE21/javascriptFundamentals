@@ -68,3 +68,15 @@ const calcAge2 = function (birthYear) {
 const age2 = calcAge2(1993);
 console.log(age2);
 */
+
+
+
+/*ARROW FUNCTIONS  
+It is a special form of function expression that is shorter, and therefore faster to write. It's called arrow function because its part of the syntax:*/
+
+//Example of arrow function to calculate the age:
+const calcAge3 = birthYear => 2022 - birthYear;
+//Calling the function
+const age3 = calcAge3(1993);
+//Log in the console.
+console.log(age3);
