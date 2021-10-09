@@ -101,3 +101,48 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 //Calling the function by passing arguments
 console.log(yearsUntilRetirement(1993, "Lautaro"));
 */
+
+
+
+
+/*FUNCTIONS CALLING OTHER FUNCTIONS
+
+//Example of function calling other functions. One function will process the fruits into small pieces. The other one, will recieve a pieces of apples and oranges, and next, produces and return juice.
+
+//This function cuts the fruit in 4 pieces and returns the value.
+function cutFruitPieces(fruit) {
+    return fruit * 4;
+}
+//This function of the fruit processor will cut the received apples and oranges in 4 pieces. To achieve this we need to call the function from above -cutFruitPieces- inside the function fruitProcessor:
+function fruitProcessor(apples, oranges) {
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+    const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges.`;
+    return juice;
+} 
+//Calling the fruitProcessor function with the arguments 2 and 3 and logg to the console.
+console.log(fruitProcessor(2, 3));
+*/
+
+
+
+
+/*REVIEWING FUNCTIONS
+//Example remaking an arrow function:
+const calcAge = function(birthYear){
+    return 2022 - birthYear;
+}
+//Main function calling the above function
+const yearsUntilRetirement = function (birthYear, firstName) {
+    const age = calcAge(birthYear);
+    const retirement = 65 - age;
+
+    if(retirement > 0) {
+        return `${firstName} retires in ${retirement} years.`;
+    }   else {
+        return `${firstName} has already retired.` 
+    }
+}
+//Calling the function
+console.log(yearsUntilRetirement(1993, "Lautaro"));
+*/
