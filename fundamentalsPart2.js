@@ -146,3 +146,11 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 //Calling the function
 console.log(yearsUntilRetirement(1993, "Lautaro"));
 */
+
+function calcAge(birthYear, firstName) {
+    const age = 2022 - birthYear;
+    console.log(`${firstName} is ${age} years old.`);
+    return age;
+}
+
+const age = calcAge(1993, "Lautaro");
