@@ -154,3 +154,50 @@ function calcAge(birthYear, firstName) {
 }
 
 const age = calcAge(1993, "Lautaro");*/
+
+
+
+
+/*INTRODUCTION TO ARRAYS
+//Store a name in a variable to use later:
+const friend1 = "Michael";
+const friend2 = "Steven";
+const friend3 = "Peter";
+//Now, lets recreate the same but with arrays:
+const friends = ["Michael", "Steven", "Peter"];
+console.log(friends);
+//Another way of writing arrays, with the array function:
+const year = new Array(1991, 1984, 2008, 2020);
+
+//Now lets console the first element of the -friends- array
+console.log(friends[0]); //Arrays are zero based, here we indicate the index
+
+//.length property to know the number of elements in the array, or to select the last element without knowing how many elements are inside:
+//To know the length
+console.log(friends.length);
+//To select the last element, because there are x time of elements, but the first one starts on position 0.
+console.log(friends[friends.length - 1]); 
+
+//Add elements into the array, using index position:
+friends[2] = "Jay";
+
+//We can calculate something, because JavaScript expects an expression always:
+const lautaro = ["Lautaro", "Clerici", "Erhardt", 2022 - 1993, "developer", friends];
+console.log(lautaro);
+
+
+//Remake of the calcAge function, but with arrays:
+const calcAge = function(birthYear){
+    return 2022 - birthYear;
+}
+//Array of birth years:
+const years = [1990, 1967, 2002, 2010, 2018];
+//Use the calcAge function and then store the results of calculating the first, second and last ages in a new array:
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+console.log(age1, age2, age3);
+//Remake of the previous function calls -calcAge(years[0])- into one single array
+const ages = [calcAge(years[0]),calcAge(years[1]),calcAge(years[years.length - 1])];
+console.log(ages);
+*/
