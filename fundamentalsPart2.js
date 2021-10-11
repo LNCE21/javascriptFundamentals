@@ -205,4 +205,41 @@ console.log(ages);
 
 
 
-/*BASIC ARRAY OPERATIONS (METHODS)*/
+/*BASIC ARRAY OPERATIONS (METHODS)
+//Example of an array:
+const friends = ["Michael", "Steven", "Peter"];
+
+//METHODS TO ADD ELEMENTS: PUSH (back) AND UNSHIFT (front)
+//PUSH METHOD, is a function that we call that is attached to the friends array itself, we pass an argument to the function and we use it to add the element to the array. Push method returns the length of the new array:
+const newLengthPush = friends.push("Jay");
+console.log(friends);
+//Push method returns length of new array, we can capture the value storing in a new variable, like we did on the example above: newLength
+console.log(newLengthPush);
+//UNSHIFT METHOD, function to add an element to the beginning of an array:
+const newLengthUnshift = friends.unshift("John");
+console.log(friends);
+//Unshift method returns length of new array, we can capture the value storing in a new variable, like we did on the example above: newLengthUnshift
+console.log(newLengthUnshift);
+
+//METHODS TO REMOVE ELEMENTS: POP (back)
+//POP METHOD, removes the last element of the array, in this case we don't pass any argument because is no needed to take the last element. 
+const newLengthPop = friends.pop();
+console.log(friends); //Jay is gone from the array
+//Pop method returns the removed element, if we capture the value on a new variable like we did on the example above: newLengthPop
+console.log(newLengthPop);
+//SHIFT METHOD, Removes the first element of the array, in this case we don't pass any argument because is no needed to take the first element:
+const newLengthShift = friends.shift();
+console.log(friends); //John is gone from the array.
+//Shift method returns the removed element, if we capture the value on a new variable like we did on the example above: newLengthShift
+console.log(newLengthShift);
+
+//METHODS TO GET THE POSITION OF AN ELEMENT
+//INDEXOF,tells us the position of an element in the array
+console.log(friends.indexOf("Steven"));//Returns the index 1
+//INCLUDES,  returns true if the element if the element is in the array and false if it is not. Uses strict equality operator to the comparisonl:
+console.log(friends.includes("Pedro"));//Returns false
+//Another application of .includes is for conditionals:
+if (friends.includes("Peter")) {
+    console.log("You have a friend called Peter");
+}
+*/
