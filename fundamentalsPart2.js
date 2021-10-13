@@ -295,7 +295,7 @@ console.log(`${lautaro.firstName} has ${lautaro.friends.length} friends, and his
 
 
 
-/*OBJECT METHODS*/
+/*OBJECT METHODS
 //We can add a function to an object as a key value pair, where the value is the function. In other words, a method is a property, and the function is the value:
 const lautaro = {
     firstName: ["Lautaro", "Nicolas"],
@@ -309,5 +309,48 @@ const lautaro = {
         return 2022 - birthYear;
     }
 };
-//To access the calcAge property/method:
-console.log(lautaro.calcAge(lautaro.birthYear));
+//To access the calcAge property/method, passing "1993" as an argument to the calcAge function:
+console.log(lautaro.calcAge(1993));
+
+//A better way of access to the calcAge property/method, but instead of passing "1993" as an argument, we could find a way of passing directly the property that contains that value to not repeat ourselves. We do so, using the -this- variable on the function:
+const lautaro = {
+    firstName: ["Lautaro", "Nicolas"],
+    lastName: "Clerici",
+    birthYear: 1993,
+    job: "Developer",
+    friends: ["Benja", "Costan"],
+    hasDriversLicense: true, 
+    //This keyword/variable is equal to the object on which the method is called (Is equal to the object calling the method)
+    calcAge: function(){
+        return 2022 - this.birthYear;
+    }
+};
+//When we use the this. variable we don't need to pass an argument, because it takes it directly from the object
+console.log(lautaro.calcAge());
+
+//A better way. Let's supposed that we need the age several times, a better way to not repeat ourselves is to calculate the age 1 time and save the value using this. keyword:
+const lautaro = {
+    firstName: ["Lautaro", " Nicolas"],
+    lastName: "Clerici",
+    birthYear: 1993,
+    job: "Developer",
+    friends: ["Benja", "Costan"],
+    hasDriversLicense: true, 
+    //This keyword to store a new property on the current object "age" on the object "lautaro"
+    calcAge: function(){
+        this.age = 2022 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function(){
+        return `${this.firstName} is a ${this.calcAge()} years old ${lautaro.job}, and he has ${this.hasDriversLicense ? "a" : "no"} driver's license.`
+    }
+};
+//When we use the this. variable we don't need to pass an argument, because it takes it directly from the object
+console.log(lautaro.calcAge());
+//Now that we created a new variable with this keyword, we can call that age property/method, like this:
+console.log(lautaro.age);
+
+//Calling getSummary method
+console.log(lautaro.getSummary());
+*/
