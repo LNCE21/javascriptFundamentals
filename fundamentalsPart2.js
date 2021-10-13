@@ -291,3 +291,23 @@ console.log(lautaro["lastName"]);
 //Challenge
 console.log(`${lautaro.firstName} has ${lautaro.friends.length} friends, and his best friend is ${lautaro.friends[0]}`);
 */
+
+
+
+
+/*OBJECT METHODS*/
+//We can add a function to an object as a key value pair, where the value is the function. In other words, a method is a property, and the function is the value:
+const lautaro = {
+    firstName: ["Lautaro", "Nicolas"],
+    lastName: "Clerici",
+    birthYear: 1993,
+    job: "Developer",
+    friends: ["Benja", "Costan"],
+    hasDriversLicense: true, 
+    //Any function attached to an object is called a method
+    calcAge: function(birthYear){
+        return 2022 - birthYear;
+    }
+};
+//To access the calcAge property/method:
+console.log(lautaro.calcAge(lautaro.birthYear));
