@@ -354,3 +354,25 @@ console.log(lautaro.age);
 //Calling getSummary method
 console.log(lautaro.getSummary());
 */
+
+
+
+
+/*ITERATION (repetition): THE FOOR LOOP
+//Example of repeating the same over and over again:
+console.log("Lifting weights on the gym, repetition 1");
+console.log("Lifting weights on the gym, repetition 2");
+console.log("Lifting weights on the gym, repetition 3");
+console.log("Lifting weights on the gym, repetition 4");
+console.log("Lifting weights on the gym, repetition 5");
+console.log("Lifting weights on the gym, repetition 6");
+console.log("Lifting weights on the gym, repetition 7");
+console.log("Lifting weights on the gym, repetition 8");
+console.log("Lifting weights on the gym, repetition 9");
+console.log("Lifting weights on the gym, repetition 10");
+
+//Example of applying the for loop, the for loop statement has 3 parts: 1. Initial value of the counter (in this case is 1) 2. Logical condition evaluated before the code in the loop is executed  (in this case rep bellow or equal to 10) 3. Increase the variable by 1
+for(let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights on the gym, repetition ${rep}`);
+}
+*/
