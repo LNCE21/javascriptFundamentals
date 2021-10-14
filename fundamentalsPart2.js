@@ -376,3 +376,61 @@ for(let rep = 1; rep <= 10; rep++) {
     console.log(`Lifting weights on the gym, repetition ${rep}`);
 }
 */
+
+
+
+
+
+/*LOOPING ARRAYS, BREAKING AND CONTINUING
+//Example: Looping through the array (only read and log to console)
+const lautaroArray =[
+    "Lautaro",
+    "Clerici",
+    2022 - 1993,
+    "Developer",
+    ["Benja", "Costan"]
+];
+//Example: Empty Array (same syntax but without elements/properties). Will be filled with the typeof of every element of the lautaroArray
+const types = [];
+
+//To iterate through the lautaroArray with the goal of loggin to the console every element (only to read), the counter variable should start in 1:
+for(let i = 0; i <= lautaroArray.length - 1; i++ ){
+    console.log(lautaroArray[i]);
+    //Filling the array the same way but with .push
+    types.push(typeof lautaroArray[i]);
+}
+//Here we can log to the console the types array after we filled with data
+console.log(types);
+
+//Example: Iterate through birth years, calculate age and store in a new array
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+for(let i = 0; i <= years.length - 1; i++){
+    ages.push(2022 - years[i]);
+}
+console.log(ages);
+
+
+//Continue Statement: is to exit the current iteration of the loop and continue to the next one.
+const lautaroArray =[
+    "Lautaro",
+    "Clerici",
+    2022 - 1993,
+    "Developer",
+    ["Benja", "Costan"]
+];
+//Example: print elements to the array that are strings
+for(let i = 0; i <= lautaroArray.length - 1; i++ ){
+    //Everything which is not a string will be skipped
+    if(typeof lautaroArray[i] !== "string") continue;
+    console.log(lautaroArray[i], typeof lautaroArray[i]);
+}
+
+//Break Statement: is used to completely terminate the whole loop.
+//Example: print elements until we found a number. Then, terminate the loop.
+for(let i = 0; i <= lautaroArray.length - 1; i++ ){
+    //Everything which is not a string will be skipped
+    if(typeof lautaroArray[i] == "number") break;
+    console.log(lautaroArray[i], typeof lautaroArray[i]);
+}
+*/
