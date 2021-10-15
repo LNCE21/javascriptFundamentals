@@ -434,3 +434,57 @@ for(let i = 0; i <= lautaroArray.length - 1; i++ ){
     console.log(lautaroArray[i], typeof lautaroArray[i]);
 }
 */
+
+
+
+
+/*LOOPING BACKWARDS AND LOOPS IN LOOPS
+const lautaroArray =[
+    "Lautaro",
+    "Clerici",
+    2022 - 1993,
+    "Developer",
+    ["Benja", "Costan"]
+];
+//Loop the array, backwards:
+for( let i = lautaroArray.length - 1; i >= 0; i--) {
+    console.log(lautaroArray[i]);
+}
+
+//Loop inside a loop
+for (let excercise = 1; excercise <= 3; excercise++) {
+    console.log(`Starting excercise N° ${excercise}`);
+    for(let rep = 1; rep <= 5; rep++) {
+        console.log(`Lifting weights, repetition N° ${rep}`);
+    }
+}
+*/
+
+
+
+
+/*The While Loop
+//Example of for loop
+for(let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights on the gym, repetition ${rep}`);
+}
+
+//We need the same components: counter, condition to stop, increase. But, in the while loop we can only specify a condition, so, the syntax is the following: before the loop we set the counter. Next, we write the while loop specifying the condition, afterwords we write the code to execute and next the increase or decrease. The while loop is more versatile because don't need a counter, the only thing that needs is the condition
+
+//Example of while loop
+let rep = 1;
+while(rep <= 10) {
+    console.log(`Lifting weights on the gym, repetition ${rep}`);
+    rep++
+};
+
+//Example of while loop without counter. Roll the dice until we roll a six, and then stop.
+//first we create a random number between 0 and 1, multiply it by 6 and this will create a decimal number between 0 and 5 (example: 5.033), we add 1 so we get 6, Math.trunc() gets rid of the decimal part. 
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) console.log (`You finally rolled a ${dice}`);
+}
+*/
