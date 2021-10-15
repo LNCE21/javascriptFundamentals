@@ -2,6 +2,8 @@
 
 ## Instructions
 
+#### Files order, first of all we have the -fundamentals- of JavaScript in two parts, they include notes of the course and some examples. Next, we have a file for assignments, meaning extra exercises for the two first sections. Finally a file for challenges, which covers the entire course.
+
 #### There is one assignment for each lecture in the JavaScript Fundamentals Sections Part 1 and 2 (not all lectures, but most);
 
 #### The goal of these assignments is that you can immediately apply the concepts you learn in each video;
