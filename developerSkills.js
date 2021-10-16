@@ -1,13 +1,71 @@
 'use strict';
-//Problem
-//We work for a company building a smart home thermometer. Our most recent task is this: "Given an array of temperatures of one day, calculate the temperature amplitude. Keep in mind that sometimes there might be a sensor error"
+/*PROBLEM 1
+We work for a company building a smart home thermometer. Our most recent task is this: "Given an array of temperatures of one day, calculate the temperature amplitude. Keep in mind that sometimes there might be a sensor error"
 
-const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
-/*1.Understanding the problem
+
+1.Understanding the problem
 What is temperature amplitude?
 Difference between the highest and lowest temperature
 How do we compute the min and max temperature?
 What's a sensor error? And what to do?
 
+2.Breaking up into sub-problems
+How to ignore errors?
+Find max value in temperature array
+Find min value
+Subtract min from max and (amplitude) return it
+
+//Array of temperatures to evaluate:
+const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
+const calcTempAmplitude = function (temps) {
+    //We will asume that the first element of the array is the maximum and minimum because we didn't loop over yet.
+    let max = temps[0];
+    let min = temps[0];
+    //Here we set to loop through the array
+    for (let i = 0; i < temps.length; i++) {
+        //ignore errors
+        if (typeof temps[i] !== "number") continue;
+        //If the current (i) value of the array (temps) is greater than the current maximum/minimum value, the maximum/minimum value will become the maximum/minimum value.
+        if (temps[i] > max) max = temps[i];
+        if (temps[i] < min) min = temps[i];
+    }
+    console.log(`The Min temperature is ${min} and the max temperature is ${max}`);
+    return max - min;
+};
+
+const amplitude = calcTempAmplitude(temperatures);
+console.log(`The amplitude is equal to ${amplitude}`);
 */
-//2.Breaking up into sub-problems
+
+
+
+
+/*PROBLEM 2: The function should receive 2 arrays of temperatures
+Merge the 2 arrays into 1 so we implement the same functionality
+
+//Merge 2 arrays:
+const array1 = [50, 5, -30];
+const array2 = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
+//Array of temperatures to evaluate:
+const temperatures = array1.concat(array2);
+
+//Function that computes: max, min and amplitude
+const calcTempAmplitude = function (temps) {
+    //We will asume that the first element of the array is the maximum and minimum because we didn't loop over yet.
+    let max = temps[0];
+    let min = temps[0];
+    //Here we set to loop through the array
+    for (let i = 0; i < temps.length; i++) {
+        //ignore errors
+        if (typeof temps[i] !== "number") continue;
+        //If the current (i) value of the array (temps) is greater than the current maximum/minimum value, the maximum/minimum value will become the maximum/minimum value.
+        if (temps[i] > max) max = temps[i];
+        if (temps[i] < min) min = temps[i];
+    }
+    console.log(`The Min temperature is ${min} and the max temperature is ${max}`);
+    return max - min;
+};
+
+const amplitude = calcTempAmplitude(temperatures);
+console.log(`The amplitude is equal to ${amplitude}`);
+*/
