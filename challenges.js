@@ -26,9 +26,9 @@ Your tasks:
 1. Store Mark's and John's mass and height in variables
 2. Calculate both their BMIs using the formula (you can even implement both versions)
 3. Create a Boolean variable 'markHigherBMI' containing information about
-whether Mark has a higher BMI than John. 
+whether Mark has a higher BMI than John.
 
-Test data: 
+Test data:
 Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
 Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 m tall.
 GOOD LUCK*/
@@ -49,7 +49,7 @@ console.log(markWeight / (markHeight ** 2));
 console.log(johnWeight / (johnHeight * johnHeight));
 console.log(johnWeight / (johnHeight ** 2));
 
-//3. Create a Boolean variable 'markHigherBMI' containing information about whether Mark has a higher BMI than John. 
+//3. Create a Boolean variable 'markHigherBMI' containing information about whether Mark has a higher BMI than John.
 let markBmi = markWeight / (markHeight ** 2);
 let johnBmi = johnWeight / (johnHeight ** 2);
 let markHigherBMI = markBmi > johnBmi;
@@ -85,7 +85,7 @@ if (markBmi > johnBmi) {
 }
 
 SOLUTION
-//2. Use a template literal to include the BMI values in the outputs. Example: "Mark's BMI (28.3) is higher than John's (23.9)!" Hint: Use an if/else statement. GOOD LUCK  
+//2. Use a template literal to include the BMI values in the outputs. Example: "Mark's BMI (28.3) is higher than John's (23.9)!" Hint: Use an if/else statement. GOOD LUCK
 if (markBmi > johnBmi) {
     console.log(`Mark's BMI (${markBmi}) is higher than John's (${johnBmi})!`);
 }   else {
@@ -179,7 +179,7 @@ billValue >= 50 && billValue <= 300 ? console.log(`According to the bill value $
 /*More efficient way of solving it
 const billValue = 40;
 const tip = billValue <= 300 && billValue >= 50 ? billValue * 0.15 : billValue * 0.2;
-console.log(`According to the bill value $${billValue}, the tip you have to leave is $ ${tip}. The total value is $${billValue + tip}`) 
+console.log(`According to the bill value $${billValue}, the tip you have to leave is $ ${tip}. The total value is $${billValue + tip}`)
 */
 
 /*2. Print a string to the console containing the bill value, the tip, and the final value
@@ -221,7 +221,7 @@ Data 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27
 Hints:
 To calculate average of 3 values, add them all together and divide by 3
 To check if number A is at least double number B, check for A >= 2 * B.
-Apply this to the team's average scores 
+Apply this to the team's average scores
 GOOD LUCK
 
 //1.Arrow function to calculate the average of 3 scores
@@ -268,11 +268,11 @@ Your tasks:
 
 3. Create an array 'tips' containing the tip value for each bill, calculated from the function you created before
 
-4. Bonus: Create an array 'total' containing the total values, so the bill + tip 
+4. Bonus: Create an array 'total' containing the total values, so the bill + tip
 Test data: 125, 555 and 44
-Hint: Remember that an array needs a value in each position, and that value can actually be the returned value of a function! So you can just call a function as array values (so don't store the tip values in separate variables first, but right in the new array) 
-GOOD LUCK 
-   
+Hint: Remember that an array needs a value in each position, and that value can actually be the returned value of a function! So you can just call a function as array values (so don't store the tip values in separate variables first, but right in the new array)
+GOOD LUCK
+
 const billValue = 40;
 const tip = billValue <= 300 && billValue >= 50 ? billValue * 0.15 : billValue * 0.2;
 console.log(`According to the bill value $${billValue}, the tip you have to leave is $ ${tip}. The total value is $${billValue + tip}`);
@@ -306,7 +306,7 @@ Your tasks:
 method on both objects). Store the BMI value to a property, and also return it from the method
 3. Log to the console who has the higher BMI, together with the full name and the respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
 Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 mtall.
-GOOD LUCK 
+GOOD LUCK
 
 const mark = {
     fullName : "Mark Miller",
@@ -390,3 +390,9 @@ const calcAverage = function(arr) {
 }
 console.log(calcAverage([2,3,6]));
 */
+
+
+
+
+/*DEVELOPER SKILLS AND EDITOR SETUP CHALLENGE*/
+//Challenge 1

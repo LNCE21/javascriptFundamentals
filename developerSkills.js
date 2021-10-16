@@ -73,7 +73,7 @@ console.log(`The amplitude is equal to ${amplitude}`);
 
 
 
-/*DEBUGGING WITH THE CONSOLE AND BREAKPOINTS*/
+/*DEBUGGING WITH THE CONSOLE AND BREAKPOINTS
 //We need to convert from celcius to kelvin
 const measureKelvin = function () {
     const measurement = {
@@ -87,10 +87,13 @@ const measureKelvin = function () {
     return kelvin;
 }
 
-//Identify the bug: Concats the input value of the prompt window with 273 instead of adding. 
+//Identify the bug: Concats the input value of the prompt window with 273 instead of adding.
 console.log(measureKelvin());
+*/
 
 
 
 
-/*USING DEBUGGER IN GOOGLE CHROME*/
+/*USING DEBUGGER IN GOOGLE CHROME
+Sources tab: developerSkills.js
+Now set breakpoints clicking on the left bar, next to the number, will appear a read point (the breakpoint), and when we refresh the page the execution will freeze in time and show us exactly  what the execution looks like at that moment in time, and that includes all the values of all the defined variables. To go back to normal click on the top right "Resume script execution"*/
