@@ -69,3 +69,28 @@ const calcTempAmplitude = function (temps) {
 const amplitude = calcTempAmplitude(temperatures);
 console.log(`The amplitude is equal to ${amplitude}`);
 */
+
+
+
+
+/*DEBUGGING WITH THE CONSOLE AND BREAKPOINTS*/
+//We need to convert from celcius to kelvin
+const measureKelvin = function () {
+    const measurement = {
+        type: "temp",
+        unit: "celsius",
+        //Fix the bug
+        value: Number(prompt("Degrees celsius:")),
+    }
+    //Find the bug: The inputted value on the prompt window is a string, the plus operator when detects a string, converts both operands to strings and concatenate them.
+    const kelvin = measurement.value + 273;
+    return kelvin;
+}
+
+//Identify the bug: Concats the input value of the prompt window with 273 instead of adding. 
+console.log(measureKelvin());
+
+
+
+
+/*USING DEBUGGER IN GOOGLE CHROME*/
