@@ -11,13 +11,13 @@
 <p align="left">Extensions, developer tools, etc</p>
 
 #### Behind The Scenes: 
-<p align="left"></p>
+<p align="left">High-level overview of JavaScript, The JavaScript Engine and Runtime, Execution Contexts and The Call Stack, Scope and The Scope Chain, Scoping in Practice, Variable Enviroment: Hoisting and The TDZ, Hoisting and TDZ in practice, The this Keyword, Regular Functions Vs. Arrow Functions, Primitives Vs. Objects (Primitive Vs. Reference Types), Primitives Vs. Objects in Practice</p>
 
 #### Data Structures: 
-<p align="left"></p>
+<p align="left">Destructuring Arrays, Destructuring Objects, The Spread Operator(...), Rest Patter and Parameters, Short Circuiting (&& and ||), The Nullish Coalescing Operator(??), Looping Arrays: The for-of Loop, Enhanced Object Literals, Optional Chaining (?.), Looping Objects: Object Keys, Values and Entries, Sets, Maps: Fundamentals, Maps: Iteration, Summary: Which Data Structure to Use?, Working with strings, String Methods</p>
 
 #### Functions: 
-<p align="left"></p>
+<p align="left">Default Parameters, How Passing Arguments Works: Value Vs. Reference, First-Class and Higher-Order Functions, Functions Returning Functions, The call and apply Methods, Immediatly Invoked Function Expression (IIFE), Closures, Closure Examples.</p>
 
 
 ## Instructions
