@@ -10,6 +10,15 @@
 #### Developer Skills: 
 <p align="left">Extensions, developer tools, etc</p>
 
+#### Behind The Scenes: 
+<p align="left"></p>
+
+#### Data Structures: 
+<p align="left"></p>
+
+#### Functions: 
+<p align="left"></p>
+
 
 ## Instructions
 
