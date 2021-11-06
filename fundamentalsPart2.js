@@ -32,7 +32,7 @@ logger();
 function fruitProcessor(apples, oranges) {
     const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
     return juice;
-} 
+}
 
 
 //Invoke, call, run the function fruitProcessor by adding arguments (the values of the parameters)
@@ -52,7 +52,7 @@ Number("23");
 
 
 /*FUNCTION DECLARATIONS VS. EXPRESSIONS
-//In JavaScript, functions are like values, meaning that they can be stored in variables. 
+//In JavaScript, functions are like values, meaning that they can be stored in variables.
 
 //Example Function Declaration to calculate age on a given birth year. We can actually call function declarations before they are defined in the code, even if it’s not a good idea.
 function calcAge1(birthYear) {
@@ -71,7 +71,7 @@ console.log(age2);
 
 
 
-/*ARROW FUNCTIONS  
+/*ARROW FUNCTIONS
 It is a special form of function expression that is shorter, and therefore faster to write. It's called arrow function because its part of the syntax:
 
 //Example of arrow function to calculate the age:
@@ -119,7 +119,7 @@ function fruitProcessor(apples, oranges) {
     const orangePieces = cutFruitPieces(oranges);
     const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges.`;
     return juice;
-} 
+}
 //Calling the fruitProcessor function with the arguments 2 and 3 and logg to the console.
 console.log(fruitProcessor(2, 3));
 */
@@ -140,7 +140,7 @@ const yearsUntilRetirement = function (birthYear, firstName) {
     if(retirement > 0) {
         return `${firstName} retires in ${retirement} years.`;
     }   else {
-        return `${firstName} has already retired.` 
+        return `${firstName} has already retired.`
     }
 }
 //Calling the function
@@ -176,7 +176,7 @@ console.log(friends[0]); //Arrays are zero based, here we indicate the index
 //To know the length
 console.log(friends.length);
 //To select the last element, because there are x time of elements, but the first one starts on position 0.
-console.log(friends[friends.length - 1]); 
+console.log(friends[friends.length - 1]);
 
 //Add elements into the array, using index position:
 friends[2] = "Jay";
@@ -222,7 +222,7 @@ console.log(friends);
 console.log(newLengthUnshift);
 
 //METHODS TO REMOVE ELEMENTS: POP (back)
-//POP METHOD, removes the last element of the array, in this case we don't pass any argument because is no needed to take the last element. 
+//POP METHOD, removes the last element of the array, in this case we don't pass any argument because is no needed to take the last element.
 const newLengthPop = friends.pop();
 console.log(friends); //Jay is gone from the array
 //Pop method returns the removed element, if we capture the value on a new variable like we did on the example above: newLengthPop
@@ -256,7 +256,7 @@ const lautaroArray =[
     ["Nicolas", "Erhardt"]
 ];
 //The solution is another data structure: Objects, in objects the order of the values not matter. We define key value pairs, and then we can give each of these values a name:
-//Object literal syntax is one way of writing objects: variable, curly braces, and next, each key has a value, if it has more than one, they go between brackets:        
+//Object literal syntax is one way of writing objects: variable, curly braces, and next, each key has a value, if it has more than one, they go between brackets:
 const lautaro = {
     firstName: ["Lautaro", "Nicolas"],
     lastName: "Clerici",
@@ -303,7 +303,7 @@ const lautaro = {
     birthYear: 1993,
     job: "Developer",
     friends: ["Benja", "Costan"],
-    hasDriversLicense: true, 
+    hasDriversLicense: true,
     //Any function attached to an object is called a method
     calcAge: function(birthYear){
         return 2022 - birthYear;
@@ -319,7 +319,7 @@ const lautaro = {
     birthYear: 1993,
     job: "Developer",
     friends: ["Benja", "Costan"],
-    hasDriversLicense: true, 
+    hasDriversLicense: true,
     //This keyword/variable is equal to the object on which the method is called (Is equal to the object calling the method)
     calcAge: function(){
         return 2022 - this.birthYear;
@@ -335,7 +335,7 @@ const lautaro = {
     birthYear: 1993,
     job: "Developer",
     friends: ["Benja", "Costan"],
-    hasDriversLicense: true, 
+    hasDriversLicense: true,
     //This keyword to store a new property on the current object "age" on the object "lautaro"
     calcAge: function(){
         this.age = 2022 - this.birthYear;
@@ -479,7 +479,7 @@ while(rep <= 10) {
 };
 
 //Example of while loop without counter. Roll the dice until we roll a six, and then stop.
-//first we create a random number between 0 and 1, multiply it by 6 and this will create a decimal number between 0 and 5 (example: 5.033), we add 1 so we get 6, Math.trunc() gets rid of the decimal part. 
+//first we create a random number between 0 and 1, multiply it by 6 and this will create a decimal number between 0 and 5 (example: 5.033), we add 1 so we get 6, Math.trunc() gets rid of the decimal part.
 
 let dice = Math.trunc(Math.random() * 6) + 1;
 while (dice !== 6) {
