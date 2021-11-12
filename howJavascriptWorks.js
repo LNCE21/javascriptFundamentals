@@ -10,7 +10,7 @@ High-level overview of JavaScript, The JavaScript Engine and Runtime, Execution 
 
 
 /////////////////////////////////////////////////////////////////////////
-// Scoping in Practice
+// SCOPING IN PRACTICE
 function calcAge(birthYear) {
     const age = 2022 - birthYear;
 
@@ -58,16 +58,15 @@ calcAge(1993);
 
 
 */
-/////////////////////////////////////////////////////////////////////////// Hoisting and TDZ in Practice
+///////////////////////////////////////////////////////////////////////// HOSTING & TDZ IN PRACTICE
 
-// Variables
-console.log(me);
-// console.log(job);
-// console.log(year);
+// This results on "undefined", because variables with var are hoisted to the value of "undefined": console.log(me);
+// This results in a reference error because the job variable is a let and by this line is under the temporal dead zone: console.log(job);
+// This results in a reference error because the year variable is a const and by this line is under the temporal dead zone: console.log(year);
 
-var me = 'Jonas';
-let job = 'teacher';
-const year = 1991;
+var me = 'Lautaro';
+let job = 'Developer';
+const year = 1993;
 
 // Functions
 console.log(addDecl(2, 3));
