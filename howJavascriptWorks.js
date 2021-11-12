@@ -57,54 +57,59 @@ calcAge(1993);
 
 
 
-*/
-///////////////////////////////////////////////////////////////////////// HOSTING & TDZ IN PRACTICE
 
+///////////////////////////////////////////////////////////////////////// HOSTING & TDZ IN PRACTICE
+//EXAMPLE 1
 // This results on "undefined", because variables with var are hoisted to the value of "undefined": console.log(me);
 // This results in a reference error because the job variable is a let and by this line is under the temporal dead zone: console.log(job);
 // This results in a reference error because the year variable is a const and by this line is under the temporal dead zone: console.log(year);
-
 var me = 'Lautaro';
 let job = 'Developer';
 const year = 1993;
 
-// Functions
-console.log(addDecl(2, 3));
-// console.log(addExpr(2, 3));
-console.log(addArrow);
-// console.log(addArrow(2, 3));
+//EXAMPLE 2
+// Log to the console the following functions to test hoisting and tdz:
+//This functions well, because is a function declaration: console.log(addDecl(2, 3));
+//This results in an error because is declared with const and is not yet outside of the TDZ: console.log(addExpr(2, 3));
+//This results in an error because is declared with var and is not yet outside of the TDZ, because variables with var are hoisted to the value of "undefined": console.log(addArrow(2, 3));
 
+//Function Declaration
 function addDecl(a, b) {
     return a + b;
 }
-
+//Function Expression
 const addExpr = function (a, b) {
     return a + b;
 };
-
+//Function Arrow
 var addArrow = (a, b) => a + b;
 
-// Example
-console.log(undefined);
+//EXAMPLE 3
+// Example of declaring using var and not being careful. We want to delete the shopping cart if there are no products, but because of the hoisting, variable numProducts is set to undefined and so, it deletes the shopping cart. To prove it, you can console log numProducts before the logic and you will get "undefined":
+
+//Logic that means when there's no products, delete shopping cart
 if (!numProducts) deleteShoppingCart();
 
+//Here we declare the total of products using var to demonstrate why is not a good idea:
 var numProducts = 10;
-
+//A fictional function declaration that will delete the shopping cart
 function deleteShoppingCart() {
     console.log('All products deleted!');
 }
 
+//EXAMPLE 4
+//Window is the global object of JavaScript in the browser. Variables declared with let or const do not create properties on the window object:
 var x = 1;
 let y = 2;
 const z = 3;
-
+//Testing if the variable is a property of the window object:
 console.log(x === window.x);
 console.log(y === window.y);
 console.log(z === window.z);
+*/
 
 
 
-/*
 /////////////////////////////////////////////////////////////////////////
 // The this Keyword in Practice
 console.log(this);
@@ -139,5 +144,3 @@ matilda.calcAge();
 
 const f = jonas.calcAge;
 f();
-
-*/
