@@ -106,26 +106,31 @@ const z = 3;
 console.log(x === window.x);
 console.log(y === window.y);
 console.log(z === window.z);
-*/
+
 
 
 
 /////////////////////////////////////////////////////////////////////////
-// The this Keyword in Practice
+// THE THIS KEYWORD IN PRACTICE
+//Example of the "this" keyword in the global scope. It is simply the window object
 console.log(this);
 
+//Example of Simple function call. Is the same example as before but inside a function with a regular function call (meaning without the function being attached to any object). The result is "undefined" because we are in strict mode
 const calcAge = function (birthYear) {
     console.log(2037 - birthYear);
     console.log(this);
 };
 calcAge(1991);
 
+//Example with an arrow function. The result is that the this keyword points to the window object because an arrow function doesn't get its own this keyword, and so, the arrow function uses the lexical this keyword which means that uses the this keyword of the parent function.
 const calcAgeArrow = birthYear => {
     console.log(2037 - birthYear);
     console.log(this);
 };
 calcAgeArrow(1980);
+*/
 
+//Example of the this keyword inside of a method. It will function well, it will get by result the object that is calling the method, in this case, the jonas object. Is like in this case "jonas" is the owner of the method. The this keyword points to "jonas" object not because is inside, but because it is being called by the jonas object on the last line:
 const jonas = {
     year: 1991,
     calcAge: function () {
@@ -135,12 +140,12 @@ const jonas = {
 };
 jonas.calcAge();
 
+
+//To demonstrate that this keyword can be called from another object, let's create another one called matilda:
 const matilda = {
     year: 2017,
 };
-
+//A function is just a value, so we can copy the calcAge function from Jonas to Matilda through -method borrowing-:
 matilda.calcAge = jonas.calcAge;
+//In this case the result will be 20, it means that the this keyword does now actually point to matilda  because is the object that is calling the function in which the this keyword is in
 matilda.calcAge();
-
-const f = jonas.calcAge;
-f();
